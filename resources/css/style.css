@@ -19,7 +19,7 @@ html {
   padding-top: 1rem;
 }
 
-.header {
+header {
   display: flex;
   justify-content: space-between;
   background-color: cadetblue;
@@ -68,6 +68,10 @@ ul li {
   line-height: 1.2em;
   padding: 1.5rem 5rem;
   font-weight: bold;
+}
+
+h1 {
+  margin: 0.67rem 0;
 }
 
 /* Middle section icons */
@@ -139,4 +143,29 @@ footer {
 footer img {
   height: 1.5rem;
   padding: 4rem 1rem 4rem 4rem;
+}
+
+/* Media queries tablet */
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  .banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0rem;
+    height: 22rem;
+  }
+
+  .box {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .box h1 {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
 }
